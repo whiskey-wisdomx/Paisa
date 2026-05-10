@@ -565,7 +565,7 @@ export default function PaisaApp() {
           <div style={{display:"flex",gap:10,padding:"0 24px 20px",overflowX:"auto"}}>
             {[
               {emoji:"💸",label:"Total",      value:fmt(total),            bg:"linear-gradient(135deg,#FF385C,#FF7A95)"},
-              {emoji:"📅",label:"Today",      value:fmt(todayAmt),         bg:"linear-gradient(135deg,#FC642D,#FFB36B)"},
+              {emoji:"📅",label:"Today",      value:fmt(dayTotal),         bg:"linear-gradient(135deg,#FC642D,#FFB36B)"},
               {emoji:"🧾",label:"Entries",    value:expenses.length,       bg:"linear-gradient(135deg,#00A699,#4DD0C4)"},
               {emoji:"📊",label:"Avg/entry",  value:fmt(expenses.length?total/expenses.length:0), bg:"linear-gradient(135deg,#8B5CF6,#C4B5FD)"},
             ].map(s=>(
